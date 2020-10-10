@@ -9,6 +9,7 @@ main{
   font-family: 'Sansita Swashed', cursive;
 }
 
+
 /* mobile first approach */
 
 .img-container{
@@ -22,7 +23,7 @@ img{
  width: 90%;
  object-fit: fill;
  align-items: center;
- margin-left: -1em;
+ margin-left: -1.5em;
  border: 5px solid white;
     box-shadow: 0 0 4px ;
 }
@@ -41,7 +42,7 @@ img{
 
     .prev-btn{
       position: relative;
-      left: 35px;
+      left: 28px;
       height: inherit fit-content;
       justify-content: center;
       padding:0 .5em;
@@ -133,6 +134,13 @@ img{
     /* border: 10px solid white;
     box-shadow: 2px 2px 4px 4px; */
   }
+  img{
+    margin-left: .2rem;
+  }
+  
+  .prev-btn{
+    left: 55px;
+}
   
 }
 
@@ -142,11 +150,11 @@ img{
     height: 30em;  
   }
   img{
-    /* margin-left: 1rem; */
+    margin-left: 1rem;
   }
 
   .prev-btn{
-    left: 35px;
+    left: 65px;
 }
   .random-btn{
     margin: 0;

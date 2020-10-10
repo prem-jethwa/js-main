@@ -8,6 +8,18 @@ body{
 }
 
 
+.cancel{
+    height: 3em; 
+    width: 3em; 
+    float: right;
+    margin: .5em;
+  }
+
+  .cancel:hover{
+    background: #b3b3b3;
+  }
+
+
 /*** navigation top ***/
 .nav-main {
     position: absolute;
