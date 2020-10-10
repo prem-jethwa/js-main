@@ -88,7 +88,7 @@ body{
     left: 0;
     bottom: 0;
     width: 0;
-    height: 100vh;
+    height:calc(100vh - 3em); 
     background-color:#383838 ;
     z-index: 1000;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
