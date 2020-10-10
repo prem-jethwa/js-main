@@ -95,12 +95,12 @@ body{
     transition:all 0.3s ease-in-out ;            /* more to learn... */
 }
 
-@media (max-width:450px){
+/* @media (max-width:450px){
     .nav-sidebar {
-        height: calc(100vh - 6em);         /* more to learn... */
+        height: calc(100vh - 6em);          more to learn... 
     }
     
-}
+} */
 
 
 
