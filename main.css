@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+  font-family: 'Sansita Swashed', cursive;
+}
+
+/* mobile first approach */
+
+.img-container{
+    display: flex;
+    margin: 0 auto;
+    width:100%;
+    height:17rem;
+    padding: 0;
+}
+img{
+ width: 85%;
+ object-fit: fill;
+ align-items: center;
+}
+
+
+/* prev next btn */
+
+  .btn{
+      padding:0 .5em;
+      border-radius: .5em;
+      border: none;
+      background: gray;
+      opacity: 0.5;
+      margin: 6em 0;
+    }
+
+    .prev-btn{
+      position: relative;
+      left: 50px;
+      height: inherit fit-content;
+      justify-content: center;
+      padding:0 .5em;
+  }
+  .next-btn{
+      position: relative;
+      right: 50px;
+      padding:.5em;
+  }
+    
+    .btn:hover{
+      background: rgb(153, 153, 153) ;
+      opacity: 0.8;
+    }
+    
+    .btn-main{
+      padding: .2em 1em;
+      border-radius: .5em;
+      margin-top: 1em;
+      font-weight: 700;
+      font-size: 18px;
+      border: peru 3px solid;
+      background-color: rgb(255, 233, 211);
+    } 
+    .random-btn{
+
+        text-align: center;
+        margin-bottom: .5em;
+    }
+  
+    .btn-main:hover{
+      background-color: rgb(199, 199, 199);
+    }
+
+    .wallpaper-header{
+      padding: 2.5em 0 .5em 0;
+        text-align: center;
+        color: white;
+      background: rgb(241, 158, 2);
+      border: oldlace 4px solid;
+    }
+
+  /* color flipper  */
+
+  .colorflipper{
+   text-align: center;
+   max-width: 920px;
+   padding: 4em 0;
+   background: chartreuse;
+   margin: 1em auto;
+   border: blanchedalmond 5px solid;
+   box-shadow: inset 2px 2px 4px;
+  }
+
+  .btn-hero{
+    font-size: 20px;
+    border: 2px black solid;
+    padding: 0em 1em;
+    border-radius: .5rem;
+    margin: 1em 0 1em 1em;
+    background:none;
+    color: rgb(0, 0, 0);
+}
+
+.btn-hero:hover{
+    color: rgb(255, 255, 255);
+    background: black;
+}
+
+.bg-h{
+  margin-top: 1em;
+}
+
+.flipper-container{
+  text-align: center;
+}
+
+/* .propery-container{
+  margin-left: 3em;
+} */
+
+
+/* media query for img and button */
+
+@media screen and (min-width:600px){
+  
+  .img-container{
+    height: 22em;
+    /* border: 10px solid white;
+    box-shadow: 2px 2px 4px 4px; */
+  }
+  
+}
+
+@media screen and (min-width:800px){
+  .img-container{
+    width: 100%;
+    height: 30em;  
+  }
+  img{
+    margin-left: 3rem;
+  }
+
+  .prev-btn{
+    left: 95px;
+}
+  .random-btn{
+    margin: 0;
+    position: relative;
+    top: -50px;
+  }
+  .btn-main{
+    color: white;
+    background-color: transparent;
+  } 
+  .btn-main:hover{
+    background-color: rgb(66, 66, 66);
+  }
+}
+
+@media screen and (min-width:1200px){
+    
+  .img-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    position: relative;
+    height: 35em;
+  }
+  img{
+    margin-left: 4em;
+    margin-right: 0;
+    border: 5px solid white;
+    box-shadow: 4px 4px 4px 8px ;
+  }
+/*   
+  .make-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  } */
+      .prev-btn{
+        left: 110px;
+    }
+      .random-btn{
+        margin: 0;
+      }
+ }
+
+/* .pj{
+  float: right;
+  font-size: 25px;
+  position: relative;
+  top: -35px;
+  right: -40px;
+  margin: 0 auto;
+} */
+
+/* form validation style */
+
+ input + span {
+    position: relative;
+  }
+
+  #fname #lname input + span::before {
+    position: absolute;
+    /* right: -20px; */
+    top: 0px;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input:invalid + span::before {
+    content: '✖';
+    color: red;
+    width: 1em;
+  }
+
+  input:valid + span::before {
+    content: '✓';
+    color: green;
+    width: 1em;
+  }
+
+  .form{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  .inside-form{
+    margin-top: 4rem;
+    /* margin-left: 4rem; */
+    border: 10px solid white;
+    padding: 2em;
+    margin: 4rem .5em 2em .5em ;
+  }
+
+  .inside-form h2{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1em;
+    color: rgb(75, 75, 75);
+    border-bottom: 3px dotted orangered;
+  }
+
+  #fname , #lname{
+    margin-top: 2rem;
+    padding: .5em;
+    border-radius: 5px;
+
+  }
+
+  /* url and emails */
+
+  .url-label ,.email-label {
+    display: block;
+    margin: 1px;  
+    padding: 1px;
+  }
+
+  .field {
+    margin: 1px;
+    padding: 1px;
+    font-size: 18px;
+  }
+
+  #url_input input:invalid {
+    background-color: #ffdddd;
+  }
+
+  #url_input:invalid {
+    border: 3px solid #ff3f3f;
+  }
+
+  #email_input input:valid {
+    background-color: #ddffdd;
+  }
+
+  .url-email:valid {
+    border: 5px solid #ddffdd;
+  }
+    
+  #url_input input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+
+  #email_input input:required:invalid {
+    border-color: #c00000;
+    color: orangered;
+  }
+
+  /* input styling  email and url*/
+
+  .url-email{
+    margin-top: 2em;
+  }
+
+  #email_input , #url_input{
+    width:400px;
+    height: 40px;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width:600px){
+      #email_input , #url_input{
+        width:300px;
+      }
+  }
+
+  /* form 2 with js  */
+  .form2-main{
+    margin: 0 .5em;
+    margin-bottom: 2rem;
+  }
+  .form2{
+    max-width: 600px;
+    margin:0 auto;
+    padding: 1rem;
+    border: 15px solid rgb(133, 133, 133);
+  }
+
+  .form2 h2{
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  #email1st, #email_repeat{
+    display: block;
+    border: rgb(0, 177, 133) 2px solid;
+    margin: 1em;
+    width: 300px;
+    padding: .5em ;
+    background: rgb(226, 226, 226);
+    border-radius: 5px;
+    
+    font-size: 17px;
+  }
+  /* #email1st{
+    /* margin-right: 2em ; 
+  } */
+
+  .b1{
+    text-align: center;
+    padding: .5rem;
+  }
+
+  .from2-btn{
+    padding: .5em;
+    border-radius: 10px;
+    background: rgb(0, 201, 201);
+    border: 3px solid rgb(0, 83, 151);
+    font-weight: 700;
+  }
+
+
+  /* password form */
+.password:valid{
+  color: green;
+}
+
+.password:invalid{
+  color: orangered;
+}
+
+.pass-form{
+  /* margin-left: 3rem; */
+  margin: 2em .5em;
+  font-size: 18px;
+}
+
+.my-form-pass{
+  max-width: 600px;
+  margin: 0 auto;
+  border: 15px solid rgb(83, 83, 83);
+  padding: 2em;
+}
+
+.pass-input{
+  display: block;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 18px;
+
+}
+.pass-input label{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.password{
+  padding: .5em;
+  min-width:300px;
+  border: 3px solid blue;
+  font-size: 18px;
+}
+#btn-see , #sub-btn{
+  padding: .5em;
+  margin: .5em;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  background: blue;
+}
+
+.my-btn-pass{
+  text-align: center;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -10px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -10px;
+  content: "✖";
+}
+
+
+
+  /* footer */
+
+  footer{
+    margin: .5em 0;
+    padding: .5em 0;
+    background: rgb(83, 83, 83);
+    color: white;
+    text-align: center;
+  }
+
+  /* .main,body,main ,.img-container img{
+    margin: 0;
+    padding: 0;
+  }
+   */
+

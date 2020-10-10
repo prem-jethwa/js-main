@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RightManu</title>
+    <link rel="stylesheet" href="./css/bar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/fa-icons.css">
+</head>
+<body id="main">
+    
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" id="btn"></div>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>   
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Dummy Links</span></li>
+            <li><a href="#">HTML&CSS</a></li>
+            <li><a href="#">BOOTSTRAP4/5</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">REACT - FRAMEWORK</a></li>
+        </ul>
+
+    </aside>
+
+    <main>
+        <h2 class="wallpaper-header"><span title="Prem jethwa" style="font-size: 25px; color: orangered;">Pj &nbsp;&nbsp;</span> Wallpaper Slider</h2>
+            <div class="img-container">
+                <button class="prev-btn btn">
+                    <i class="fas fa-chevron-left fa-4x"></i>
+                </button>
+                <img src="./img/wallpaper/wall.jpg" alt="wallpaper" id="wallpaper">
+                <button class="next-btn btn">
+                    <i class="fas fa-chevron-right fa-4x"></i>
+                </button>
+            </div> 
+            <div class="propery-container">
+
+                <div class="flipper-container">  
+                    <button class="btn-main random-btn">Randon wallpaper</button>
+                </div>  
+                <div class="colorflipper">
+                    <h2 class="bg-h">Background Flipper : <span class="color">#c0c0c0</span></h2>
+                    <button id="btn-color" class="btn-hero">Click Here</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form action="submit" method="get" class="form">
+        <div class="inside-form">
+            <h2>Form Validation</h2>
+            <label for="fname" >First name : </label>
+            <input id="fname" name="fname" type="text" required>
+            <span></span><br>
+            <label for="lname" >Last name : </label>
+            <input id="lname" name="lname" type="text" required>
+            <span></span>
+
+            <div class="url-email">
+                <div class="field">
+                    <label for="url_input" class="url-label">Enter a URL:</label>
+                    <input type="url" id="url_input" placeholder="https:www.example.com" >
+                </div>
+                
+                <div class="field"> 
+                    <label for="email_input" class="email-label">Enter an email address:</label>
+                    <input type="email" id="email_input" required placeholder="example@gmail.com">
+                </div>  
+            </div>
+        </div>
+    </form>
+
+    <form action="" class="form2-main">
+
+        <div class="form2">
+            <h2>Email Repeate Validation</h2>
+            <label>
+                E-mail:	
+                <input type="email" id="email1st"
+                name="email1" placeholder="Eg:prem@me.com" required>
+            </label><br>
+
+            <label>
+                E-mail Repeate:
+                <input type="email" id="email_repeat"
+                name="email2" placeholder="Eg:prem@me.com" required onchange="check()">
+            </label><br>
+            <div class="b1">
+                <button class="from2-btn" type="submit" value="Confirm Emails! " onchange=" return check()">Confirm Email</button><br>
+            </div>
+        </div>
+        
+    </form>
+
+    <!-- password form -->
+    <form class="pass-form">
+        <div class="my-form-pass">
+            <div class="pass-input">
+                <label for="password">Password </label>
+                <input type="password" class="password" min="8" minlength="8" required placeholder="password"/>
+                <button id="btn-see" type="button"> see </button><br>
+            </div>
+        
+            <p id="letter" class="invalid">Must include Lower Case character </p>
+            <p id="capital" class="invalid">Must include Capital character </p>
+            <p id="number" class="invalid">Must include Number</p>
+            <p id="length" class="invalid">Must include At least 8 character long</p>
+            
+            <div class="my-btn-pass">
+                <button id="sub-btn" type="submit"> Submit </button>
+            </div>
+
+        </div>
+    </form>
+    
+
+    <footer>
+        <p>copyright © 2020 all rights reserved</p>
+      </footer>
+
+    <script src="./js/hex.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/bar.js"> </script>
+    <script src="./js/fa-icons.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
