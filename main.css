@@ -207,9 +207,21 @@ img{
 
   #fname #lname input + span::before {
     position: absolute;
-    /* right: -20px; */
+    right: -20px;
     top: 0px;
+    white-space: nowrap;
   }
+
+/*   
+@media screen and (max-width:600px){
+  
+  #fname #lname input + span::before {
+    display: block;
+  }
+
+} */
+
+  
 
   input:invalid {
     border: 2px solid red;
